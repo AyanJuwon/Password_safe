@@ -1,0 +1,223 @@
+/* #######################Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&display=swap');
+
+
+body{
+    
+    /* #bdc3c7  #2c3e50; */
+    background-image: url("./icons8-padlock.svg");
+/* background: #ED213A;  fallback for old browsers */
+/* background: -webkit-linear-gradient(to top, #93291E, #ED213A);  */
+ /* Chrome 10-25, Safari 5.1-6 */
+/* background: linear-gradient(to top, #93291E, #ED213A);  */
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: grey;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, black, grey);  
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, black, grey); 
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family: 'Roboto', sans-serif;
+
+    min-height:100vh;
+    background: hsla(0, 0%, 0%, 1);
+
+background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, hsla(206, 47%, 9%, 1) 0.3333333333333333%, hsla(216, 41%, 18%, 1) 0.6666666666666666%);
+
+background: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, hsla(206, 47%, 9%, 1) 0.3333333333333333%, hsla(216, 41%, 18%, 1) 0.6666666666666666%);
+
+background: -webkit-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, hsla(206, 47%, 9%, 1) 0.3333333333333333%, hsla(216, 41%, 18%, 1) 0.6666666666666666%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#0c1821", GradientType=1 );
+}
+
+i{
+    grid-column: 1;
+    margin:auto;
+}
+img.logo{
+    
+    width:60%;
+    height:30%;
+    margin:auto;
+    padding:auto;
+    
+}
+header{
+text-align:center;
+color:white;
+height:15vh;
+}
+header h1{
+    font-size: 3rem;
+}
+h1{
+    text-align: center;
+    font-family: 'Bangers', cursive;
+font-family: 'Roboto', sans-serif;
+}
+.logout{
+    background-color: red;
+    padding:10px;
+    width:150px;
+}
+button{
+    border:none;
+    border-radius:5px;
+    box-shadow:0 7px 30px -10px rgba(150,170,180,0.5);
+    margin-bottom: 10px;
+}
+.signup{
+    background-color: #5cb85c;
+    padding:10px;
+    width:150px;
+}
+.loginform{
+    text-align: center;
+    background-color: white;
+    padding:20px 10px 70px 10px;
+    margin:auto;
+    width: 30vw;
+    height:40vh;
+    box-shadow: 1px 1px 20px 10px rgba(128, 128, 128, 0.493);
+    border-radius: 10px;
+    border: none;
+}
+.fieldWrapper{
+    margin:10px auto;
+}
+/* .loginform form{
+    padding:80px;
+} */
+.loginform input{
+    width:80%;
+    height:30px;
+    border-radius: 5px;
+    
+    border:1px solid grey;
+   
+}
+.loginform input::placeholder{
+    color: grey;
+    padding:10px;
+    
+}
+.loginform ul{
+    text-align: left;
+}
+.loginbutton{
+    /* background: #ED213A;  fallback  */
+    /* for old browsers */
+    background: green;  
+color:white;
+border:none;
+border-radius: 5px;
+padding: 10px;
+width:50%;
+margin:auto;
+
+}
+
+.password_list_button{
+    background-color: #5bc0de;
+}
+
+
+
+.link{
+    text-decoration:none;
+    color:hotpink;
+    background-color: #5cb85c;
+}
+li{
+    text-align: left;
+}
+/* ########################################Tablet Screens */
+
+@media only screen and (max-width: 768px) {
+ 
+body{
+    padding:0;
+
+}
+header{
+    height:max-content; 
+}
+nav{
+    margin:auto;
+}
+    
+
+.loginform{
+    
+    
+    padding:10px 50px 150px 50px;
+    margin:auto;
+    width: 30vw;
+    height:40vh;
+    box-shadow: 1px 1px 10px 10px rgba(128, 128, 128, 0.493);
+    border-radius: 10px;
+    border: none;
+
+}
+
+
+}
+
+@media only screen and (max-width:450px){
+
+   header h1{
+       font-size: 30px;
+   }
+
+    .loginform{
+    
+    
+    padding:10px 50px 150px 50px;
+    margin:auto;
+    width: 70vw;
+    height:35vh;
+    box-shadow: 1px 1px 20px 10px rgba(128, 128, 128, 0.493);
+    border-radius: 10px;
+    border: none;
+}
+
+
+.loginform input{
+    width:100%;
+    height:30px;
+    border-radius: 0px;
+    border:1px solid grey;
+    
+     border-top:none;
+    border-left:none;
+    border-right:none;
+
+}
+}
+
+/* #####################Very small screens */
+
+@media only screen and (max-width:370px){
+
+    header{
+        height:15vh;
+    }
+nav h1{
+    font-size: 1.5rem;
+}
+   .loginform{
+    
+    
+    padding:10px 50px 150px 50px;
+    margin:auto;
+    width: 65vw;
+    height:35vh;
+    box-shadow: 1px 1px 20px 10px rgba(128, 128, 128, 0.493);
+    border-radius: 10px;
+    border: none;
+}
+
+
+}
+
+

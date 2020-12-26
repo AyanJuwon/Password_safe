@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static './css/index.css' %}">
+    <link rel="stylesheet" href="{% static './css/login.css' %}">
+    <link rel="stylesheet" href="{% static './css/create.css' %}">
+    <title>Keep your password</title>
+</head>
+<body>
+    <header>
+        <nav>
+    <h1>Keep your password </h1>
+</nav></header>
+
+    <div class="loginform">
+        <h3>How To Use</h3>
+        {% if user.is_authenticated %}
+        <h5>Welcome {{user}}</h5>
+        <ul>
+<li>Go to create password page</li>
+<li>Input account name, username and password on the create password page</li>
+<li>save password</li>
+<li>View passwords list on password List page</li></ul>
+<!-- <p>Not a member? <a href="{% url 'accounts:signup' %}">Signup here</a></p> -->
+<!-- <p>forgot password? retrieve password here</p> -->
+
+<!-- <a href="{% url 'hub:password_list' %}"><button type="button" class="password_list_button">Go to Password List</button> </a> -->
+<a href="{% url 'hub:password_list' %}"><button type="button" class="create">Go to Password List</button> </a>
+        {% else %}
+        <ul>
+        <li>Login <a class="link" href="{% url 'login' %}">here</a> </li>
+        <li>Go to create password page</li>
+        <li>Input account name, username and password on the create password page</li>
+        <li>save password</li>
+        <li>View passwords list on password List page</li></ul>
+        <p>Not a member? <a href="{% url 'accounts:signup' %}">Signup here</a></p>
+        
+        
+        <!-- <a href="{% url 'hub:password_list' %}"><button class="password_list_button" type="button"> Go to Password list</button></a> -->
+        <a href="{% url 'hub:password_list' %}"><button class="create" type="button"> Go to Password list</button></a>
+        {% endif  %}
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+
+header{
+        padding-bottom:3rem ;
+    }
+.loginform{
+    height:max-content;
+}
+.create{
+    background: #0275d8;
+    color:white;
+    padding:10px;
+    width:150px;
+}
+.list_link{
+    /* margin:auto; */
+    background: #292b2c;
+    color:white;
+    padding:10px;
+    width:150px;
+}
+
+
+.formbuttons{
+    padding:20px;
+}
